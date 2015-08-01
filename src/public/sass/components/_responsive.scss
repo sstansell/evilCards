@@ -1,0 +1,140 @@
+/** medium/small screens */
+  @media (max-width: $mediumBreak){
+    //turn off the menu
+	.onlyBig{
+		display: inherit;
+	}
+
+	.content{
+		width:92%;
+		margin: auto;
+	}
+	.menu{
+		.menu-content{
+			li{
+				a{
+					padding: 0 10px 0 10px;
+				}
+			}
+		}
+	}
+	.menu-stuck .menu{
+		.menu-content{
+			ul{
+				width: 468px;
+			}
+			.logo{
+				margin-left: 20px;
+				width: 280px;
+			}
+		}
+	}
+
+	.start-page{
+	  	background:url($mainBgImageMed);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		-o-background-size: inherit;
+		-moz-background-size: inherit;
+		-webkit-background-size:inherit;	  
+	}
+
+    .start-page .content {
+      width:90%;
+      height:100%;
+    }
+
+    .start-page, .start-page .opacity{
+      height:100%;
+    }
+    .start-page .content .text {
+      width:90%;
+    }
+	.bio{
+	  height:800px;
+	}
+	.bio .opacity{
+	  height:800px;
+	}
+	.bio .content{
+	  height:610px;
+	}
+	
+    h1{
+    	font-weight:300;
+    	letter-spacing:6px;
+    }
+  }
+/** small screens */
+@media (max-width: $smallBreak){
+	/**	Utility class to show stuff only on small screens */
+	.onlySmall{
+		display:inherit;
+		
+	}
+	.onlyBig{
+		display: none;
+	}	
+    h1{
+    	font-size: 2.2rem;
+    	font-weight:300;
+    	letter-spacing:6px;
+    }
+    .menu{
+		
+    }  
+	.menu-stuck .menu{
+	  .menu-content{
+	    ul{
+	      width: 100%;    
+	    }
+	    .logo{
+	      width: 0;
+	      opacity: 0; 
+	    }
+	  }
+
+	}    
+	.menu-small{
+		display:block;
+	}
+	.start-page .content .text .logo{
+	  width:123px;
+	  height:30px;
+	  margin:0 auto 50px;
+	  
+	}      	
+  	.what p{
+		padding-bottom: 30px;
+		margin-top:20px;
+	}
+
+	.bio{
+	  height:1400px;
+	}
+	.bio .opacity{
+	  height:1400px;
+	}
+	.bio .content{
+	  height:1210px;
+	}
+
+	@-webkit-keyframes bounce-fade {
+	    0%   { opacity: 0; bottom: 125px; }
+	    100% { opacity: 1; bottom: 40px; }
+	}
+	@-moz-keyframes bounce-fade {
+	    0%   { opacity: 0; bottom: 125px; }
+	    100% { opacity: 1; bottom: 40px; }
+	}
+	@-o-keyframes bounce-fade {
+	    0%   { opacity: 0; bottom: 125px; }
+	    100% { opacity: 1; bottom: 40px; }
+	}
+	@keyframes bounce-fade {
+	    0%   { opacity: 0; bottom: 125px; }
+	    100% { opacity: 1; bottom: 40px; }
+	}
+
+}
+

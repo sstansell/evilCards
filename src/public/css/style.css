@@ -1,0 +1,395 @@
+/** IMAGES */
+/** COLORS */
+/** GRID */
+/** COLUMNS */
+/** MARGIN */
+/** TYPE */
+/** BREAKPOINTS */
+/* Font Google - strong reaload time */
+/* http://meyerweb.com/eric/tools/css/reset/  
+    v2.0 | 20110126 
+    License: none (public domain) 
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  color: #2B2E34;
+  font-weight: 400;
+  height: 100%; }
+
+strong {
+  font-weight: 700; }
+
+/*
+    Position
+    Box
+    Border
+    Background
+    Text
+    Transforms
+    Transitions/Animations
+    Other
+ */
+em {
+  font-style: italic; }
+
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+a {
+  text-decoration: underline;
+  outline: none;
+  color: #a7acb7; }
+  a:hover {
+    color: #a7acb7; }
+
+h1 {
+  font-size: 3.5rem;
+  color: #2B2E34;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 14.9px;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  /*text-transform:uppercase;*/
+  letter-spacing: .1rem;
+  line-height: 1.2; }
+
+p {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: .05em;
+  margin-top: 40px;
+  line-height: 1.4; }
+
+h1 span {
+  color: #2fa68e; }
+
+/*
+    Position
+    Box
+    Border
+    Background
+    Text
+    Transforms
+    Transitions/Animations
+    Other
+ */
+body {
+  background-color: #d5d5d5; }
+
+header {
+  padding: 1rem; }
+
+::-moz-selection {
+  background: #a7acb7;
+  color: #fff; }
+
+::selection {
+  background: #a7acb7;
+  color: #fff; }
+
+::-moz-selection {
+  background: #a7acb7;
+  color: #fff; }
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.players {
+  width: 15%;
+  float: left; }
+  .players h2 {
+    text-align: center; }
+
+.cards {
+  width: 85%;
+  float: left; }
+
+.playerList li {
+  list-style-type: none;
+  padding: .4rem; }
+
+img.responsive {
+  width: 100%;
+  height: auto; }
+
+.numberCircle {
+  border-radius: 50%;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 8px;
+  background: #2B2E34;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem; }
+
+.onlySmall {
+  display: none; }
+
+a.noDecorate {
+  text-decoration: none;
+  color: #2B2E34; }
+
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+/* Reusable column setup */
+.col {
+  border: 0px solid transparent;
+  float: left;
+  box-sizing: border-box;
+  background-clip: padding-box !important; }
+
+/* 1. 1 Column Grid 0px - 759px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    100%
+    
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 759px) {
+  .col {
+    margin-left: 2%;
+    padding: 0 1.5%; }
+  /* --- Gridpak variables ---*/
+  .row .col:first-child {
+    margin-left: 0; }
+  /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        
+        */
+  .span_1 {
+    margin-left: 0;
+    width: 100%; } }
+
+/* 2. 3 Column Grid 760px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    32.0%
+    Span 2:    66.0%
+    Span 3:    100%
+    
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 760px) {
+  .col {
+    margin-left: 2%;
+    padding: 0 1.5%; }
+  /* --- Gridpak variables ---*/
+  .row .col:first-child {
+    margin-left: 0; }
+  .span_1 {
+    width: 32%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%; }
+  .span_2 {
+    width: 66%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%; }
+  .span_3 {
+    margin-left: 0;
+    width: 100%; } }
+
+/*
+    Position
+    Box
+    Border
+    Background
+    Text
+    Transforms
+    Transitions/Animations
+    Other
+ */
+div.card {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 3px 5px #aaa;
+  border-radius: 3px;
+  margin: 1rem;
+  padding: 1rem;
+  display: inline;
+  float: left;
+  position: relative;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none h2;
+    user-select-font-size: 1.6rem; }
+  div.card.white {
+    background-color: #fff;
+    color: #2B2E34; }
+    div.card.white h2 {
+      color: #2B2E34; }
+  div.card.black {
+    background-color: #2B2E34;
+    color: #fff; }
+    div.card.black h2 {
+      color: #fff; }
+    div.card.black hr {
+      height: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      background-color: #fff;
+      color: #fff;
+      border: 0 none; }
+    div.card.black .two {
+      position: absolute;
+      bottom: .4rem;
+      right: 1rem; }
+  div.card:after {
+    content: 'Evil Cards';
+    position: absolute;
+    bottom: 1rem; }
+
+/** medium/small screens */
+@media (max-width: 960px) {
+  .onlyBig {
+    display: inherit; }
+  .content {
+    width: 92%;
+    margin: auto; }
+  .menu .menu-content li a {
+    padding: 0 10px 0 10px; }
+  .menu-stuck .menu .menu-content ul {
+    width: 468px; }
+  .menu-stuck .menu .menu-content .logo {
+    margin-left: 20px;
+    width: 280px; }
+  .start-page {
+    background: url("/images/backgrounds/orangeSparksClose_sml.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: inherit;
+    -moz-background-size: inherit;
+    -webkit-background-size: inherit; }
+  .start-page .content {
+    width: 90%;
+    height: 100%; }
+  .start-page, .start-page .opacity {
+    height: 100%; }
+  .start-page .content .text {
+    width: 90%; }
+  .bio {
+    height: 800px; }
+  .bio .opacity {
+    height: 800px; }
+  .bio .content {
+    height: 610px; }
+  h1 {
+    font-weight: 300;
+    letter-spacing: 6px; } }
+
+/** small screens */
+@media (max-width: 759px) {
+  /**	Utility class to show stuff only on small screens */
+  .onlySmall {
+    display: inherit; }
+  .onlyBig {
+    display: none; }
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 6px; }
+  .menu-stuck .menu .menu-content ul {
+    width: 100%; }
+  .menu-stuck .menu .menu-content .logo {
+    width: 0;
+    opacity: 0; }
+  .menu-small {
+    display: block; }
+  .start-page .content .text .logo {
+    width: 123px;
+    height: 30px;
+    margin: 0 auto 50px; }
+  .what p {
+    padding-bottom: 30px;
+    margin-top: 20px; }
+  .bio {
+    height: 1400px; }
+  .bio .opacity {
+    height: 1400px; }
+  .bio .content {
+    height: 1210px; }
+  @-webkit-keyframes bounce-fade {
+    0% {
+      opacity: 0;
+      bottom: 125px; }
+    100% {
+      opacity: 1;
+      bottom: 40px; } }
+  @keyframes bounce-fade {
+    0% {
+      opacity: 0;
+      bottom: 125px; }
+    100% {
+      opacity: 1;
+      bottom: 40px; } } }
+
+/* Custom Stylesheet */

@@ -1,0 +1,82 @@
+/*
+    Position
+    Box
+    Border
+    Background
+    Text
+    Transforms
+    Transitions/Animations
+    Other
+ */
+body{
+  background-color: $backColor;
+}
+
+header{
+  padding: 1rem;
+}
+::selection {
+  background: $activeColor;
+  color:$whitish;
+}
+
+::-moz-selection {
+  background: $activeColor;
+  color:$whitish;
+}
+
+
+.container{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.players{
+  width: 15%;
+  float: left;
+  h2{
+    text-align:center;
+  }
+}
+.cards{
+  width: 85%;
+  float: left;
+}
+.playerList{
+  li{
+    list-style-type:none;
+    padding: .4rem;
+  }
+}    
+
+
+img.responsive{
+  width: 100%;
+  height: auto;
+}
+.numberCircle {
+    border-radius: 50%;
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+    padding: 8px;
+    
+    background: $blackish;
+    border: 2px solid $whitish;
+    color: $whitish;
+    text-align: center;
+    
+    font-size: 1rem;
+} 
+
+
+.onlySmall{
+  display:none;
+}
+
+a.noDecorate{
+  text-decoration: none;
+  color: $darkText;
+}

@@ -1,0 +1,39 @@
+/** IMAGES */
+
+$mainBgImage: "/images/backgrounds/orangeSparksClose_min.jpg";
+$mainBgImageMed: "/images/backgrounds/orangeSparksClose_sml.jpg";
+$mainBgImageSml: "/images/backgrounds/orangeSparksClose_sml.jpg"; 
+$secondBgImage: "/images/backgrounds/nutsBolts_min.jpg";
+$arrowImage: "/images/arrow-down.png";
+
+
+/** COLORS */
+$whitish: #fff;
+$blackish: #2B2E34;
+
+$activeColor: lighten($blackish, 50%);
+$navColor: $blackish;
+$backColor: #d5d5d5;
+$darkText: $blackish;
+$medText: #757575;
+$lightText: $whitish;
+
+/** GRID */
+$containerWidth: 960px;
+
+/** COLUMNS */
+$columnHeight: 100%;
+$columnMarginBottom: 70px;
+$columnMarginSides: 3%;
+
+/** MARGIN */
+$headerMargin: 60px;
+
+/** TYPE */ 
+$titleFontFamily: Helvetica Neue, Arial, sans-serif;
+$headerFontFamily: $titleFontFamily;
+$bodyFontFamily: $titleFontFamily;
+
+/** BREAKPOINTS */
+$mediumBreak: $containerWidth;
+$smallBreak: 759px;

@@ -1,0 +1,361 @@
+/* Thomsoon.com - OnePage CSS Responsive theme
+-- version 1.0
+-- Copyright (c) 2014 Thomsoon.com
+-- licensed under the MIT
+--
+-- http://www.thomsoon.com/
+--
+*/
+
+
+
+/*
+ * Theme Name: Onepage
+ * Author: Thomsoon
+ * Created: 14/11/2014
+ */
+
+
+/** Common Components */
+.content{
+  position:relative;
+  width:$containerWidth;
+  margin: 0 auto;
+  overflow: hidden;
+    padding-bottom: $columnMarginBottom;
+}
+.clear { 
+    clear:both; 
+}
+
+
+/* Start page */
+.start-page{
+  position:relative;
+  overflow: hidden;
+  width:100%;
+  height:100%;
+  z-index:10;
+  //background:url($mainBgImage) rgba(79,79,79,0.6) bottom center fixed no-repeat;
+  margin-bottom: -60px;
+  //background-size: cover;
+  &::before {
+    content: ' ';
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $darkText;
+    background: url($mainBgImage) rgba(79,79,79,0.6) bottom center;
+    background-size: cover;
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+  }
+  h1{
+    font-family: $titleFontFamily;
+  }
+  h2{
+    font-size:22px;
+    text-transform: uppercase;
+    opacity:1;
+    color:$whitish;
+    font-weight:300;
+    letter-spacing:1px;
+    margin-top:40px;
+  }
+  hr{
+    color: $whitish;
+    margin-top:30px;
+    background-color: $whitish;
+    height: 1px;
+    width:106px;
+    border:0;
+
+  }      
+  .opacity{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75); /* Standard Off */
+  }
+  .content{
+    width:700px;
+    height:100%;
+    .arrow-down{
+      position: absolute;
+      bottom: 110px;
+      left: 50%;
+      margin-left: -10px;
+      width: 21px;
+      height: 29px;
+      background: url($arrowImage) no-repeat center center;
+      display: block;
+      -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
+      -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */
+      -o-animation:      bounce-fade 1.2s infinite; /* Opera 12+ */
+       animation:        bounce-fade 1.2s infinite; /* IE 10+ */
+    }    
+    .text{
+      position:absolute;
+      text-align:center;
+      margin:auto;
+      top:0; 
+      left:0; 
+      bottom:0; 
+      right:0;
+      width:700px;
+      height:520px;
+      .logo{
+        width:123px;
+        height:123px;
+        margin:0 auto 50px;  
+      }      
+    }    
+  }
+}
+
+@-webkit-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 225px; }
+    100% { opacity: 1; bottom: 100px; }
+}
+@-moz-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 225px; }
+    100% { opacity: 1; bottom: 100px; }
+}
+@-o-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 225px; }
+    100% { opacity: 1; bottom: 100px; }
+}
+@keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 225px; }
+    100% { opacity: 1; bottom: 100px; }
+}
+
+/* What I Do secion */
+.what{
+  position:relative;
+  width:100%;
+  background:$whitish;
+  z-index:10;
+  h1{
+    font-size:34px;
+    color:$darkText;
+    text-align:center;
+    margin-top:$headerMargin;
+    letter-spacing:6px;
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height:1.2;
+  }
+  hr{
+    color: $darkText;
+    margin-top:30px;
+    background-color: $darkText;
+    height: 1px;
+    width:106px;
+    border:0;
+  }
+  h2{
+    text-align:center;
+    margin-top:25px;
+    font-size:26px;
+    color:$darkText;
+    line-height:1.2;
+    letter-spacing:6px;
+    width:100%;
+    position:relative;
+    font-weight:400;
+  }
+  p{
+    text-align:center;
+    font-size:18px;
+    /*width:250px;
+    margin:30px auto;*/
+    color:$medText;
+    line-height:26px;
+    letter-spacing:0;
+    position:relative;
+    font-weight:300;
+  }  
+}
+
+/* Portfolio */
+.portfolio{
+  position:relative;
+  width:100%;
+  background:#f3f3f3;
+  z-index:10;
+  .content{
+    img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+    h1{
+      font-size:34px;
+      color:$darkText;
+      text-align:center;
+      margin-top:$headerMargin;
+      letter-spacing:6px;
+      font-weight:bold;
+      text-transform:uppercase;
+      line-height:1.2;
+    }    
+    h2{
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:25px;
+      font-size:26px;
+      color:$darkText;
+      line-height:1.2;
+      letter-spacing:6px;
+      width:100%;
+      position:relative;
+      font-weight:400;
+    }
+    hr{
+      color: $darkText;
+      margin-top:30px;
+      background-color: $darkText;
+      height: 1px;
+      width:106px;
+      border:0;
+    }
+  }
+}
+
+.workList{
+  list-style: inside disc;
+  text-align: left;
+  padding: 0 7%;
+  letter-spacing:.05em;
+  line-height:1.4;
+}
+
+
+/* Bio */
+.bio{
+  position:relative;
+  width:100%;
+  z-index:10;
+  height:650px;
+  background:url($secondBgImage) 0px 0px fixed;
+  background-size: cover;
+  .opacity{
+    position:absolute;
+    width:100%;
+    height:650px;
+    background:rgba(79,79,79,0.6);
+  }
+ 
+  .content{
+    position:absolute;
+    height:410px;
+    margin:auto;
+    margin-top:$headerMargin;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+  hr{
+    color: $whitish;
+    margin-top:30px;
+    background-color: $whitish;
+    height: 1px;
+    width:106px;
+    border:0;
+
+  }
+  h2{
+    font-size:34px;
+    color:$whitish;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:6px;
+    line-height:1.2;
+    text-align:center;
+  }
+  p{
+    text-align: center;
+  }
+  .title{
+    line-height: 1.8;
+  }
+}
+
+/* Contact */
+.contact{
+  position:relative;
+  width:100%;
+  background:$whitish;
+  z-index:10;
+  overflow:hidden;
+  margin-bottom: 300px;  
+  h1{
+    font-size:34px;
+    color:$darkText;
+    text-align:center;
+    margin-top:$headerMargin;
+    letter-spacing:6px;
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height:1.2;
+  }
+  hr{
+    color: $darkText;
+    margin-top:30px;
+    background-color: $darkText;
+    height: 1px;
+    width:106px;
+    border:0;
+  }
+  p.title{
+    color: $darkText;
+    margin:40px auto;
+    width:300px;
+    line-height:26px;
+    letter-spacing:0;
+    font-size:16px;
+    font-weight:300;
+    text-align:center;
+  }
+  h2{
+    text-align:center;
+    margin-top:25px;
+    font-size:26px;
+    color:$darkText;
+    line-height:1.2;
+    letter-spacing:6px;
+    width:100%;
+    position:relative;
+    font-weight:400;
+  }
+  p{
+    text-align:center;
+    /*width:250px;*/
+    margin:30px auto;
+    color:$medText;
+    line-height:26px;
+    letter-spacing:0;
+    position:relative;
+    font-weight:300;
+  }
+  ul{
+    text-align:left;
+    /*width:250px;*/
+    margin:30px auto;
+    color:$medText;
+    line-height:26px;
+    letter-spacing:0;
+    position:relative;
+    font-weight:300;
+  }
+  a{
+    color: $darkText;
+    text-decoration: none;
+  }            
+}
+
+

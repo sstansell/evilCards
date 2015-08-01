@@ -1,0 +1,33 @@
+{
+  "name": "SeanStansell.com",
+  "version": "0.0.0",
+  "description": "portfolio site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SeanStansell.com"
+  },
+  "author": "Sean Stansell",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.6",
+    "browserify": "^11.0.1",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-gzip": "^1.1.0",
+    "gulp-html-replace": "^1.5.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-react": "^3.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uncss": "^1.0.2",
+    "hammerjs": "^2.0.4",
+    "wiredep": "^2.2.2"
+  }
+}

@@ -1,0 +1,70 @@
+
+html, body{
+  font-family: $bodyFontFamily;
+  font-size:20px;
+  -webkit-font-smoothing: subpixel-antialiased!important;
+  color:$darkText;
+  font-weight:400;
+  height:100%;
+}
+
+strong{
+  font-weight:700;
+}
+/*
+    Position
+    Box
+    Border
+    Background
+    Text
+    Transforms
+    Transitions/Animations
+    Other
+ */
+em{
+  font-style: italic; 
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+} 
+
+a{
+  text-decoration:underline;
+  outline:none;
+  color: $activeColor;
+  &:hover {
+      color:$activeColor;
+  }  
+}
+
+
+h1{
+  font-size:3.5rem;
+  color:$darkText;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:14.9px;
+  line-height:1.2;
+}
+h2{
+  font-size:1.8rem;
+  color:$whitish;
+  font-weight:700;
+  /*text-transform:uppercase;*/
+  letter-spacing:.1rem;
+  line-height:1.2;
+}
+p{
+  color:$whitish;
+  font-weight:400;
+  letter-spacing:.05em;
+  margin-top:40px;
+  line-height:1.4;
+}
+
+
+h1 span{
+  color:#2fa68e;
+}

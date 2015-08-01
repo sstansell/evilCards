@@ -1,0 +1,152 @@
+$transitionSpeed: .7s;
+
+
+/* Menu mobile */
+.menu-small{
+  display:none;
+}
+.menu-media{
+  position:relative;
+  width:100%;
+  height:90px;
+  background:$navColor;
+  z-index:1000;
+  display:none;
+  .menu-content{
+    width:280px;
+    position:relative;
+    margin:0 auto;
+    .logo {
+       color:$whitish;
+       font-weight:700;
+       font-size:24px;
+       width:200px;
+       line-height:90px;
+       float:left;
+       list-style: none;
+    }
+    .icon{
+      width:41px;
+      height:23px;
+      float:right;
+      line-height:100px;
+    }    
+  }
+
+}
+.menu-click{
+  display:none;
+  li {
+    position:relative;
+    width:100%;
+    height:70px;
+    color:#333333;
+    font-size:18px;
+    text-align:center;
+    line-height:70px;
+    z-index:1000;
+    border-bottom:1px solid #f2f2f2;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    li:hover {
+      color:$activeColor;
+    }    
+  }
+}
+
+/* Menu */
+
+.menu{
+  position:relative;
+  width:100%;
+  height:60px;
+  background:$whitish;
+  border-bottom:1px solid #f2f2f2;
+  z-index:1000;
+  .logo{
+    color:$darkText;
+    font-weight:700;
+    font-size:24px;
+    width:0;
+    line-height:60px;
+    float:left;
+    list-style: none;
+    letter-spacing:3px;     
+    opacity:0;
+    margin-left:-300px;
+    a{
+      text-decoration: none;
+      color: $darkText;
+    }
+  }
+  .menu-content{
+    width:100%;
+    max-width: $containerWidth;
+    position:relative;
+    margin:0 auto;
+    ul{
+      width:100%;
+      max-width: $containerWidth;
+      left:50%;
+      float:right;
+      text-align:center;
+      list-style:none;
+      transition: width $transitionSpeed ease-in-out;      
+    }
+    li{
+      display:inline-block;
+      position:relative;
+      a{
+        color:#333;
+        font-size:16px;
+        display: block;
+        padding: 0 20px 0 20px;
+        line-height:60px;
+        text-decoration: none;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+      }
+      a:hover{
+        color:$activeColor;
+      }      
+      .active a{
+        color:$activeColor;
+      }      
+    } 
+  }  
+}
+
+
+.menu-stuck .menu{
+  .menu-content{
+    ul{
+      width: 520px;    
+    }
+    .logo{
+      width: 300px;
+      opacity: 1; 
+      margin-left: 25px; 
+      transition: width 0s ease-in-out $transitionSpeed;  
+      transition: margin-left $transitionSpeed ease-in-out 0.1s;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
